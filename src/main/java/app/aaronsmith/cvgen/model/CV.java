@@ -52,7 +52,7 @@ public class CV {
         if (personalStatement != null) {
             str.append("personalStatement=" + this.personalStatement + ", ");
         }
-        str.append("workExperience=" + workExperience);
+        str.append("workExperience=" + workExperience + ", ");
         str.append("education=" + education);
         str.append("}");
         return str.toString();
