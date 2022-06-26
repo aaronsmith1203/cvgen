@@ -8,6 +8,7 @@ public class CV {
     private String personalStatement;
     private List<JobDescription> workExperience = new ArrayList<>();
     private List<EducationDescription> education = new ArrayList<>();
+    private List<String> skills = new ArrayList<>();
 
     public CV() {
     }
@@ -44,6 +45,14 @@ public class CV {
         this.education = education;
     }
 
+    public List<String> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(List<String> skills) {
+        this.skills = skills;
+    }
+
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
@@ -53,7 +62,8 @@ public class CV {
             str.append("personalStatement=" + this.personalStatement + ", ");
         }
         str.append("workExperience=" + workExperience + ", ");
-        str.append("education=" + education);
+        str.append("education=" + education + ", ");
+        str.append("skills=" + skills);
         str.append("}");
         return str.toString();
     }
