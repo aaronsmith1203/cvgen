@@ -6,6 +6,7 @@ import java.util.List;
 public class CV {
     private String title = "Default Title";
     private String personalStatement;
+    private ContactDetails contactDetails = new ContactDetails();
     private List<JobDescription> workExperience = new ArrayList<>();
     private List<EducationDescription> education = new ArrayList<>();
     private List<String> skills = new ArrayList<>();
@@ -27,6 +28,14 @@ public class CV {
 
     public void setPersonalStatement(String personalStatement) {
         this.personalStatement = personalStatement;
+    }
+
+    public ContactDetails getContactDetails() {
+        return contactDetails;
+    }
+
+    public void setContactDetails(ContactDetails contactDetails) {
+        this.contactDetails = contactDetails;
     }
 
     public List<JobDescription> getWorkExperience() {
@@ -61,6 +70,7 @@ public class CV {
         if (personalStatement != null) {
             str.append("personalStatement=" + this.personalStatement + ", ");
         }
+        str.append("contactDetails=" + contactDetails + ", ");
         str.append("workExperience=" + workExperience + ", ");
         str.append("education=" + education + ", ");
         str.append("skills=" + skills);
