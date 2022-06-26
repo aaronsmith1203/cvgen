@@ -6,6 +6,7 @@ import java.util.List;
 public class CV {
     private String title = "Default Title";
     private List<JobDescription> workExperience = new ArrayList<>();
+    private List<EducationDescription> education = new ArrayList<>();
 
     public CV() {
     }
@@ -26,12 +27,21 @@ public class CV {
         this.workExperience = workExperience;
     }
 
+    public List<EducationDescription> getEducation() {
+        return education;
+    }
+
+    public void setEducation(List<EducationDescription> education) {
+        this.education = education;
+    }
+
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append("[" + this.getClass().getSimpleName() + "]{");
         str.append("title=" + this.title + ", ");
         str.append("workExperience=" + workExperience);
+        str.append("education=" + education);
         str.append("}");
         return str.toString();
     }
