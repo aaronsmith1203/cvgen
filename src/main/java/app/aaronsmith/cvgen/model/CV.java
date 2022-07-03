@@ -67,9 +67,7 @@ public class CV {
         StringBuilder str = new StringBuilder();
         str.append("[" + this.getClass().getSimpleName() + "]{");
         str.append("title=" + this.title + ", ");
-        if (personalStatement != null) {
-            str.append("personalStatement=" + this.personalStatement + ", ");
-        }
+        str.append("personalStatement=" + this.personalStatement + ", ");
         str.append("contactDetails=" + contactDetails + ", ");
         str.append("workExperience=" + workExperience + ", ");
         str.append("education=" + education + ", ");
