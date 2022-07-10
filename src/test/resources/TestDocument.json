@@ -1,0 +1,29 @@
+{
+    "personalStatement": "This is my personal statement.",
+    "contactDetails": {
+        "telephoneNumber": "0123 456 7890"
+    },
+    "workExperience": [
+        {
+            "jobTitle": "Plumber",
+            "companyName": "Silly Plumbs",
+            "startDate": "5000000"
+        },
+        {
+            "jobTitle": "Software Developer",
+            "companyName": "Warez 4 You",
+            "startDate": "123289081",
+            "description": "I did a lot of software development in this job."
+        }
+    ],
+    "education": [
+        {
+            "title": "Software Development Bootcamp",
+            "provider": "QA Training",
+            "description": "I learned a lot about software developement and object-oriented programming."
+        }
+    ],
+    "skills": [
+        "Java", "Unit Testing", "Origami"
+    ]
+}
